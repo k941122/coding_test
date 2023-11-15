@@ -38,8 +38,43 @@ solution();
  */
 
 
+//나이 출력! (세는 나이 기준!)
 
+/**
+ * 문제설명
+ * 머쓱이는 40살인 선생님이 몇 년도에 태어났는지 궁금해졌습니다.
+ * 나이 "age"가 주어질 때, 2022년을 기준 출생 연도를 return 하는 solution 함수
+ * 를 완성하시오!
+ * 
+ * 제한 사항!
+ * - 0<=age<=120
+ * - 나이는 태어난 연도에 1살이며 1년마다 1씩 증가합니다.
+ * 
+ * 입출력 예시
+ * 
+ * ex1) (age)40 (result)1983
+ * ex2) (age)23 (result)2000
+ * 
+ * 입출력 예시 설명
+ * - 2022년 기준 40살 이므로 1983년생입니다.
+ * - 2022년 기준 23살 이므로 2000년생입니다.
+ * 
+ */
 
+function solution (age) {
+    if(age<0||age>=120){
+        console.log("")
+    }
+    return 2022+1-age
+}
+
+/**
+ * new.Date().geyFullYear() 함수 이용해 보기!!
+ * 
+ * function solution (age) {
+ *     return newDate().getFullYear() - age +1; 
+ * }
+ */
 
 
 
