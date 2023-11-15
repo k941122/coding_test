@@ -76,7 +76,7 @@ function solution (age) {
  * }
  */
 
-
+//다양한 코드 사용하기!
 
 
 
