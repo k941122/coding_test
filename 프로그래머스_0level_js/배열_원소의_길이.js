@@ -49,7 +49,7 @@ function solution (strlist) {
  * 
  * answer.push(con);
  * 빈 배열이 값으로 매겨진 변수 answer에 
- * 변수 con(배열의 문자열 요소의 갯수를 값으로 가진) 을 배열 앞에서 push한다.
+ * 변수 con(배열의 문자열 요소의 갯수를 값으로 가진) 을 배열 뒤에 push한다.
  * 
  * ▽Array.push("배열앞에 넣을 무언가");
  *  배열의 끝에 하나 이상의 요소를 추가하고, 새로운 길이를 반환한다.
