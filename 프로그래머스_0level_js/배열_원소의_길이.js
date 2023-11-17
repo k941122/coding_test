@@ -26,8 +26,9 @@ function solution (strlist) {
     let answer = [];//들어온 배열이 담길 변수!
     let len = strlist.length; //배열의 길이를 측정해주는 .length 
     for (let i = 0; i < len; i++ ) { // i 는 length로 길이가 측정되 분해된? 배열요소, 즉 for문은 strlist의 배열 요소를 배열의 전체 요소 갯수 만큼 반환시키기 위해사용
-         let con = strlist[i].length; // strlist[i]는 배열의 요소 1개 이고 => 이 요소의 길이를 측정하는 Array.length를 쓴다. => 배열 요소(문자열)의 갯수를 세주는 것! 
-         answer.push(con); //for문 위에 선언된 변수 answer에 Array.push를 이용해서 위에서 선언된 con변수를 answer 변수의 값, 비어있는 배열 안에 앞에서 부터 for문 조건이 끝날때 가지 배열의 각요소 갯수를 넣어준다.
+         let convert = strlist[i].length; // strlist[i]는 배열의 요소 1개 이고 => 이 요소의 길이를 측정하는 Array.length를 쓴다. => 배열 요소(문자열)의 갯수를 세주는 것! 
+         answer.push(convert); //for문 위에 선언된 변수 answer에 Array.push를 이용해서 위에서 선언된 con변수를 answer 변수의 값, 비어있는 배열 안에 앞에서 부터 for문 조건이 끝날때 가지 배열의 각요소 갯수를 넣어준다.
+         return answer; //위의 배열 answer을 호출한 곳으로 return 해준다.
     }
 }
 
