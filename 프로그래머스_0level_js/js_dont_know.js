@@ -142,7 +142,7 @@ Math.trunc(56.89); //56
 //인스턴스 란?
 //filter 함수 알아보고 개념 정리 +예제 작상!
 
-//sice map filter reduce 매서드 정리하기!
+//sice map filter reduce splite 매서드 정리하기!
 
 
 
