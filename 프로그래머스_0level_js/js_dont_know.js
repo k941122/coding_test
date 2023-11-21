@@ -144,7 +144,8 @@ Math.trunc(56.89); //56
 
 //sice map filter reduce splite 매서드 정리하기!
 //Math.abs() 음수를 양수로 변환 시키는 매서드 정리!
-
+//Math.max() 매서드 정리!
+ 
 
 
 
