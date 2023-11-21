@@ -143,6 +143,7 @@ Math.trunc(56.89); //56
 //filter 함수 알아보고 개념 정리 +예제 작상!
 
 //sice map filter reduce splite 매서드 정리하기!
+//Math.abs() 음수를 양수로 변환 시키는 매서드 정리!
 
 
 
