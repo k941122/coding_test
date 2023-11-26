@@ -35,7 +35,7 @@
  * 스타트 넘버 num1
  * 엔드 넘버 num2
  * 
- * 사용할 메서드 = ㅜnumbers.slice(시작,끝);
+ * 사용할 메서드 = numbers.slice(시작,끝);
  * 
  */
 
