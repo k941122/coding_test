@@ -54,10 +54,14 @@ function solution (arr,n) {
     let len = arr.length;
     if (len%2 !== 0) {
         return arr.map((a,i) => i%2 ===0 ? a+n : a);
-    } else {
-        return arr.map((a,i) => i%2 !== 0 ? a+n : a);
     }
+     return arr.map((a,i) => i%2 !== 0 ? a+n : a);
 }
+
+/**
+ * if blook scope (if문의 실행할 식이 써지는 공간)에 return이 서져 있으면 
+ * else는 필요 없다.
+ */
 
 /**
  * arr 배열의 길이가 홀수이냐 짝수 이냐에 따라서 다른 계산 조건이 주어지기 때문에 
