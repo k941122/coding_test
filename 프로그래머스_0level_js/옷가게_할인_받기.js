@@ -44,11 +44,11 @@
 
 function solution(price) {
     if (price <= 100000) {
-        return Math.floor(price-(price * 0.05));
-    } else if (300000 <= price <= 300000) {
-        return Math.floor(price-(price * 0.10));
-    } else if (500000 <= price <= 500000) {
-        return Math.floor(price-(price * 0.20));
+        return price-(price * 0.05);
+    } else if ( price <= 300000) {
+        return price-(price * 0.10);
+    } else if (price <= 500000) {
+        return price-(price * 0.20);
     }
 }
 
@@ -64,4 +64,22 @@ function solution(price) {
  * 입력값 〉	580000
  * 기댓값 〉	464000
  * 실행 결과 〉	실행한 결괏값 522000이 기댓값 464000과 다릅니다.
+ */
+
+function solution(price) {
+    if (500000 <= price) {
+        return price *0.8;
+    } else if (300000 <= price) {
+        return price *0.9;
+    } else if (100000 <= price) {
+        return price *0.95;
+    } else return  price
+}
+
+/**
+ * if문의 조건문을 잘못 적었다.
+ * 
+ * price <= 500000 은 price가 500000보다 작거나 같을 경우 라는 의미 이고,
+ * 500000 <= price 는 price가 500000보다 크거나 같을 경우 라는 의미 이다. 
+ * 
  */
