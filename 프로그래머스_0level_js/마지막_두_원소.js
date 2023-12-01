@@ -60,4 +60,14 @@ function solution (num_list) {
  * answer.push()의 식이 잘못 되었을 것 같다.
  */
 
+// ▼ 
+function solution (num_list) {
+    const [a,b] = [...num_list].reverse();
+    return [...num_list,a>b?(a-b):a*2];
+}
 
+/**
+ * const [a,b] 배열에 ... spread 문법을 이용해 배열을 복사하고, reverse 메서드를 통해 요소들을 반전 시킨다.
+ * return 부분에 ...num_list 로 다시 복사 한뒤, 위의 a,b 요소를 이용해서 삼항 연산자로 조건을 작성해,
+ * true면 a-b를 false면 a*2를 출력한다.
+ */
