@@ -39,7 +39,7 @@
  * 
  */
 
-
+// ▼ 오답 코드
 function solution (num_list) {
     let answer = -1;
     for (let i = 0; i <= num_list; i++) {
@@ -50,4 +50,24 @@ function solution (num_list) {
     return answer;
 }
 
+/**
+ * 테스트 1
+ * 입력값 〉	[12, 4, 15, 46, 38, -2, 15] 
+ * 기댓값 〉	5
+ * 실행 결과 〉	실행한 결괏값 -1이 기댓값 5과 다릅니다.
+ * 
+ * 
+ * 
+ */
 
+// ▼ 정답 코드
+function solution (num_list) {
+    return num_list.findIndex(v=>v<0);
+}
+
+/**
+ * 첫번째 음수 index를 찾으려고 하니, findIndex 메서드가 있었다.
+ * 해당 배열에서 찾고자 하는 index를 검색하는 건데, 일반괄호 안에 
+ * callback 함수 식을 새워서 값을 매개변수로 받고 그 매개변수가 0보다 작은 index를
+ * return 하라는 것이다.
+ */
