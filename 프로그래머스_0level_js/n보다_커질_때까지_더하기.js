@@ -83,13 +83,21 @@ function solution02 (numbers , n) {
 /**
  * 코드 실행은 통과 했으나, 제출후 체점 하기 에서 테스트9,11 을 통과 못함
  */
-answer = numbers.reduce((acc,cur) => acc +cur)
-function solution03 (numbers , n) {
+
+function solution (numbers,n) {
     let answer = 0;
-    for (let i =0; i <= numbers.length; i++) {
-        for (let i = answer;i<=n;i++) {
-            answer += 
-        }
+    let i = 0;
+    while (answer <=n) {
+        answer+= numbers[i++]
     }
     return answer;
-}
+} 
+
+/**
+ * while  문을 이용해서 while 문 밖에서 세운 answer 변수의 값이 n보다 크거나 같을때 
+ * 까지 해당 식을 반복하라는 명령을 내렸다.
+ * 
+ * while문 안에 numbers의 요소를 더한 값을 answer 변수의 값에 누적 시킨다.
+ * 
+ * 그 결과 n보다 작거나 같을때 까지 numbers의 요소들이 더해진다.
+ */
