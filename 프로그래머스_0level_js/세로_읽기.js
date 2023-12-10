@@ -59,7 +59,7 @@
 
 function solution (my_string, m ,c) {
     return [...my_string].slice(0,Math.ceil(my_string.length / m))
-                        .map((_,i)=> my_string.chatAt(i*m+c-1))
+                        .map((_,i)=> my_string.charAt(i*m+c-1))
                         .join("");
 }
 
