@@ -62,16 +62,25 @@
  * 
  * a라면 X의 맨 뒤에 a를 a번 추가 x.push(x[i]*)
  * 
- * 인덱스 추출 -> 추출한 인덱스의 
+ * 
+ * map? reduce ? 
  * 
  */
 
 
 
 function solution (arr) {
-    let answer = [];
-    answer += 
-    return answer;
+    return arr.reduce((acc,cur)=> acc.concat(Array(cur).fill(cur)),[]);
 }
+
+/**
+ * reduce를 이용해 acc(누산기)기본 값을 배열[]로 설정한뒤,
+ * 
+ * 누산기에 concat 메서드를 이용해 파라미터로 전달되는 값들을 기존 배열에 합쳐서 
+ * 새로운 배열로 만들어 준다.
+ * 
+ * Array 메서드를 이용해 현재값의 크기를 길이로 가진 배열로 만들고,
+ * fill 메서드를 이용해서  노든 배열에 현재값을 배열로 채워넣는다.
+ */
 
 
