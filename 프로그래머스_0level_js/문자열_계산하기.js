@@ -58,14 +58,14 @@ function solution (my_string) {
 
 function solution (my_string) {
     let arr = my_string.split(" ");
-    let answer = Nnmber(my_string[0]);
+    let answer = Number(arr[0]);
 
-    arr.forEach((v,i) => {
-        if( v=== "+") {
-            answer += Number(arr[i+1]);
+    arr.forEach((item,index) => {
+        if( item=== "+") {
+            answer += Number(arr[index+1]);
         }
-        if (v === "-") {
-            answer -= Number(arr[i+1])
+        if (item === "-") {
+            answer -= Number(arr[index+1])
         }
     })
     return answer
@@ -74,9 +74,9 @@ function solution (my_string) {
 /**
  * 공백을 기준으로 split 메서드를 이용해 배열을 만들어 준다 (arr)
  * 
- * answer 변수를 만들고 Number 메서드를 이용해 my_string의 0인 요소를 설정해준다.
+ * answer 변수를 만들고 Number 메서드를 이용해 숫자로 만든뒤  my_string의 0인 요소를 설정해준다.
  * 
- * arr 배열을 forEach를 이용해 순회하는데, 
+ * arr 배열을 forEach를 이용해 순회하는데 매개변수로 item(현재값),index(현재인덱스)를 준다.
  * 
  * if문 두개를 이용해 + 가 나오면 Number 메서드 안의 arr배열 요소에 +1을 더해준 값을 answer에 누적시키고
  * 
