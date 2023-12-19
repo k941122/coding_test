@@ -80,6 +80,7 @@ function solution (arr,queries) {
         answer.push(temp?temp:-1);
     }
     return answer;
+}
 
     /**
      * 
@@ -91,7 +92,7 @@ function solution (arr,queries) {
      * 
      * for of 문 내부에 temp 변수를 선언하고 arr배열을 filter를 통해 특정 조건에 부합하는
      * 요소만 출력 해준다. 여기서 조건은 i(arr의 요소)가 s(시작요소)보다 크거나 같고, e(끝 요소)
-     * 보다 작거나 같고 k보다 작은 요소들만 걸러서 출력 하라는 것이다.
+     * 보다 작거나 같고 v(값)이 k보다 작은 요소들만 걸러서 출력 하라는 것이다.
      * 
      * 출력된 요소들을 담은 배뎔을 sort를 이용해 오름차순 정렬을 하고 
      * 마지막 으로 가장 작은 요소를 택하기 위해 [0] 으로 배열의 1번째 요소를 호출하면 된다.
@@ -100,5 +101,5 @@ function solution (arr,queries) {
      * temp 가 없으면 (값이 없으면) -1을 temp가 존제하면 그 값을 answer에 push 해준다.
      * 
      */
-}
+
 
