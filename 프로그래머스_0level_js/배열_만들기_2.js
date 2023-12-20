@@ -50,18 +50,16 @@
  */
 
 function solution(l, r) {
-    let arr = Array.from({ length: r - l + i }, (_,i) => l+1);
+    let arr = Array.from({ length: r - l + 1 }, (_, i) => l + i);
 
     let filterArr = arr.filter(v => {
         const str = v.toString();
         return str.split('').every(char => char === '0' || char === '5');
     });
 
-    let answer = filterArr.map(Number).sort((a,b) => a -b);
+    let answer = filterArr.sort((a, b) => a - b);
 
-
-
-    return answer.length>0?answer:[-1];
+    return answer.length > 0 ? answer : [-1];
 }
 
 /**
