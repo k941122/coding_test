@@ -43,32 +43,33 @@
  */
 
 function solution(array) {
-    var obj = {};
-
+    const obj = {};
+  
     array.forEach((number) => {
-        if (!obj[number]) {
-            obj[number] = 1;
-        } else {
-            obj[number] += 1;
-        }
+
+      if (!obj[number]) {
+        obj[number] = 1;
+      } else {
+        obj[number] += 1;
+      }
     });
-
+  
     let highestValue = 0;
-
+  
     for (let key in obj) {
-        const value = obj[key];
-
-        if (value > highestValue) {
-            highestValue = value;
-            highestValue = Number(key);
-        }
+      const value = obj[key];
+      if (value > highestValue) {
+        highestValue = value;
+        highestValueKey = Number(key); 
+      }
     }
-
+  
     const maximum = Math.max(...Object.values(obj));
-
+  
     const mode = Object.keys(obj).filter((key) => obj[key] === maximum);
-    return mode.length === 1 ? highestValue : -1;
-}
+  
+    return mode.length === 1 ? highestValueKey : -1;
+  }
 
 /**
  * 주어진 배열을 객체에 넣기 위해 객체를 생성한다,
